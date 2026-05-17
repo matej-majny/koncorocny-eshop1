@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElectroTech - Prémiová Elektronika</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="#">Electro<span class="text-primary">Tech</span>.</a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex mx-auto w-100 my-3 my-lg-0 px-lg-4" style="max-width: 550px;">
+                    <div class="input-group">
+                        <input class="form-control border-0 bg-light" type="search" placeholder="Vyhľadávajte laptopy, príslušenstvo, slúchadla..." aria-label="Search">
+                        <button class="btn btn-primary px-4" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                
+                <ul class="navbar-nav align-items-center mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white hover-primary" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white hover-primary" href="support.html">Podpora</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-outline-light position-relative px-4" href="cart.html">
+                            <i class="bi bi-cart3 me-1"></i> Košík
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                2
+                                <span class="visually-hidden">predmety v košíku</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-white text-center d-flex align-items-center">
+        <div class="container">
+            <span class="badge bg-primary px-3 py-2 rounded-pill mb-3 fw-medium">Jarný výpredaj - zľavy až 40%</span>
+            <h1 class="display-3 fw-bold mb-3 hero-title">Technika novej generácie je tu!</h1>
+            <p class="lead mb-5 mx-auto text-light opacity-75" style="max-width: 600px;">Preskúmajte najnovšiu aj overenú elektroniku.</p>
+            <a href="#products" class="btn btn-primary btn-lg px-5 py-3 rounded-pill shadow-lg fw-semibold custom-btn">Shop the Collection <i class="bi bi-arrow-right ms-2"></i></a>
+        </div>
+    </header>
+
+    <section class="container py-5 mt-4">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <h2 class="fw-bold mb-0">Nakupujte podľa kategórií</h2>
+            <a href="#" class="text-primary text-decoration-none fw-medium">Zobraziť všetky <i class="bi bi-arrow-right"></i></a>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-phone fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Smartfóny</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-laptop fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Laptopy</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-headphones fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Audio</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-smartwatch fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Wearables</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-cpu-fill fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Mikrokontroléry</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-lightning-charge-fill fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Elektronické komponenty</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-controller fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Hry</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="card text-center category-card border-0 shadow-sm py-4 h-100 rounded-4">
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <div class="icon-wrapper bg-primary bg-opacity-10 text-primary rounded-circle mb-3 d-flex align-items-center justify-content-center">
+                            <i class="bi bi-display fs-1"></i>
+                        </div>
+                        <h6 class="card-title fw-bold m-0">Monitory/TV</h6>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </section>
+
+    <section id="products" class="py-5 bg-white">
+        <div class="container py-4">
+            <h2 class="fw-bold mb-4 text-center">Práve populárne</h2>
+            <div class="row g-4">
+                
+                <div class="col-sm-6 col-lg-3">
+                    <a href="products/neo.html" class="text-decoration-none">
+                        <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                            <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1">-15%</span>
+                            <div class="product-img-wrapper">
+                                <img src="assets/img/neo.jpg" class="card-img-top" alt="Laptop">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex text-warning small mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    <span class="text-muted ms-1">(42)</span>
+                                </div>
+                                <h5 class="card-title fw-bold fs-6">Macbook Neo</h5>
+                                <p class="card-text text-muted small mb-3">Apple A18 Pro, 8GB RAM, 512GB SSD</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <span class="text-muted text-decoration-line-through small d-block">759.99€</span>
+                                        <span class="text-dark fw-bold fs-5">680.00€</span>
+                                    </div>
+                                    <button class="btn btn-primary rounded-circle p-2 lh-1"><i class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>    
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <a href="products/sony.html" class="text-decoration-none">
+                        <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">New</span>
+                            <div class="product-img-wrapper">
+                                <img src="assets/img/xm5.jpg" class="card-img-top">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex text-warning small mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                    <span class="text-muted ms-1">(128)</span>
+                                </div>
+                                <h5 class="card-title fw-bold fs-6">Sony Noise Cancelling WH-1000XM5</h5>
+                                <p class="card-text text-muted small mb-3">ANC, 40h výdrž batérie, Mikrofón</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="text-dark fw-bold fs-5">340.99€</span>
+                                    <button class="btn btn-primary rounded-circle p-2 lh-1"><i class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                
+                <div class="col-sm-6 col-lg-3">
+                    <a href="products/s26.html" class="text-decoration-none">
+                        <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                            <div class="product-img-wrapper">
+                                <img src="assets/img/s26u.jpg" class="card-img-top" alt="Smartphone">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex text-warning small mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                                    <span class="text-muted ms-1">(89)</span>
+                                </div>
+                                <h5 class="card-title fw-bold fs-6">Samsung Galaxy S26 Ultra</h5>
+                                <p class="card-text text-muted small mb-3">512GB Úložisko, 12GB RAM, Snapdragon 8 Gen 5</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="text-dark fw-bold fs-5">1499.99€</span>
+                                    <button class="btn btn-primary rounded-circle p-2 lh-1"><i class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <a href="products/insta360.html" class="text-decoration-none">
+                        <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                            <div class="product-img-wrapper">
+                                <img src="assets/img/insta360.png" class="card-img-top" alt="Action Camera">
+                            </div>
+                            <div class="card-body d-flex flex-column p-4">
+                                <div class="d-flex text-warning small mb-2">
+                                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                                    <span class="text-muted ms-1">(214)</span>
+                                </div>
+                                <h5 class="card-title fw-bold fs-6">Insta360 X5 Standard Bundle</h5>
+                                <p class="card-text text-muted small mb-3">360° kamera – rozlíšenie 8K 360°, vodotesná do 15 m (IP68)</p>
+                                <div class="mt-auto d-flex align-items-center justify-content-between">
+                                    <span class="text-dark fw-bold fs-5">$199.50</span>
+                                    <button class="btn btn-primary rounded-circle p-2 lh-1"><i class="bi bi-plus-lg"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+    
+    <div class="col-sm-6 col-lg-3">
+        <a href="products/pixel.html" class="text-decoration-none">
+            <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">Novinka</span>
+                <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                    <img src="assets/img/pix9.jpg" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column p-4">
+                    <div class="d-flex text-warning small mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                        <span class="text-muted ms-1">(420)</span>
+                    </div>
+                    <h5 class="card-title fw-bold fs-6">Google Pixel 9 Pro</h5>
+                    <p class="card-text text-muted small mb-3">Pokročilý AI asistent, špičkový fotoaparát, čistý Android, 256GB úložisko.</p>
+                    <div class="mt-auto d-flex align-items-end justify-content-between">
+                        <div>
+                            <span class="text-dark fw-bold fs-5">999.00€</span>
+                        </div>
+                        <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <a href="products/pixel.html" class="text-decoration-none">
+            <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                    <img src="assets/img/xps14.avif" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column p-4">
+                    <div class="d-flex text-warning small mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                        <span class="text-muted ms-1">(156)</span>
+                    </div>
+                    <h5 class="card-title fw-bold fs-6">Dell XPS 14</h5>
+                    <p class="card-text text-muted small mb-3">Intel Core Ultra 7, 32GB RAM, 1TB SSD, 3.2K OLED dotykový displej, hliníkové šasi.</p>
+                    <div class="mt-auto d-flex align-items-end justify-content-between">
+                        <div>
+                            <span class="text-dark fw-bold fs-5">1 899.00€</span>
+                        </div>
+                        <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <a href="products/momentum4.html" class="text-decoration-none">
+            <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1">-15%</span>
+                <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                    <img src="assets/img/snhm4.jpg" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column p-4">
+                    <div class="d-flex text-warning small mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        <span class="text-muted ms-1">(890)</span>
+                    </div>
+                    <h5 class="card-title fw-bold fs-6">Sennheiser Momentum 4</h5>
+                    <p class="card-text text-muted small mb-3">Prémiový zvuk, adaptívne potláčanie hluku (ANC), bezkonkurenčná výdrž batérie až 60 hodín.</p>
+                    <div class="mt-auto d-flex align-items-end justify-content-between">
+                        <div>
+                            <span class="text-muted text-decoration-line-through small d-block">349.00€</span>
+                            <span class="text-dark fw-bold fs-5">296.65€</span>
+                        </div>
+                        <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="col-sm-6 col-lg-3">
+        <a href="products/iwatch.html" class="text-decoration-none">
+            <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                    <img src="assets/img/iwatch2.jpg" class="card-img-top">
+                </div>
+                <div class="card-body d-flex flex-column p-4">
+                    <div class="d-flex text-warning small mb-2">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                        <span class="text-muted ms-1">(1,432)</span>
+                    </div>
+                    <h5 class="card-title fw-bold fs-6">Apple Watch Ultra 2</h5>
+                    <p class="card-text text-muted small mb-3">Odolné titánové puzdro, najjasnejší displej, pokročilé zdravotné a extrémne športové funkcie.</p>
+                    <div class="mt-auto d-flex align-items-end justify-content-between">
+                        <div>
+                            <span class="text-dark fw-bold fs-5">899.00€</span>
+                        </div>
+                        <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+
+</div>
+
+    <div class="row g-4 mt-2">
+        <a href="products/rpi.html" class="text-decoration-none">
+            <div class="col-sm-6 col-lg-3">
+                <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                    <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                        <img src="assets/img/rpi5.jpg" class="card-img-top p-3">
+                    </div>
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex text-warning small mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(512)</span>
+                        </div>
+                        <h5 class="card-title fw-bold fs-6">Raspberry Pi 5 (8GB)</h5>
+                        <p class="card-text text-muted small mb-3">2.4GHz štvorjadrový procesor, 8GB RAM, podpora dvoch 4K displejov, PCIe rozhranie.</p>
+                        <div class="mt-auto d-flex align-items-end justify-content-between">
+                            <div>
+                                <span class="text-dark fw-bold fs-5">89.90€</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <a href="products/ryzen.html" class="text-decoration-none">
+                <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-3 z-1">-8%</span>
+                    <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                        <img src="assets/img/ryzen7.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex text-warning small mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            <span class="text-muted ms-1">(1,204)</span>
+                        </div>
+                        <h5 class="card-title fw-bold fs-6">AMD Ryzen 7 7800X3D</h5>
+                        <p class="card-text text-muted small mb-3">8 jadier, 16 vlákien, revolučná technológia 3D V-Cache, momentálne najlepší procesor pre hranie hier.</p>
+                        <div class="mt-auto d-flex align-items-end justify-content-between">
+                            <div>
+                                <span class="text-muted text-decoration-line-through small d-block">419.00€</span>
+                                <span class="text-dark fw-bold fs-5">385.00€</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <a href="products/xbox.html" class="text-decoration-none">
+                <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                    <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                        <img src="assets/img/xboxX.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex text-warning small mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
+                            <span class="text-muted ms-1">(4,821)</span>
+                        </div>
+                        <h5 class="card-title fw-bold fs-6">Xbox Series X</h5>
+                        <p class="card-text text-muted small mb-3">Najrýchlejšia a najvýkonnejšia konzola Xbox. Hranie v 4K rozlíšení, 1TB rýchle SSD, spätná kompatibilita.</p>
+                        <div class="mt-auto d-flex align-items-end justify-content-between">
+                            <div>
+                                <span class="text-dark fw-bold fs-5">499.00€</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+            <a href="products/rog.html" class="text-decoration-none">
+                <div class="card h-100 product-card shadow-sm border-0 rounded-4 overflow-hidden position-relative">
+                    <span class="badge bg-success position-absolute top-0 start-0 m-3 z-1">Novinka</span>
+                    <div class="product-img-wrapper bg-light d-flex align-items-center justify-content-center text-muted" style="height: 220px;">
+                        <img src="assets/img/rogoled.jpg" class="card-img-top">
+                    </div>
+                    <div class="card-body d-flex flex-column p-4">
+                        <div class="d-flex text-warning small mb-2">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                            <span class="text-muted ms-1">(67)</span>
+                        </div>
+                        <h5 class="card-title fw-bold fs-6">ASUS ROG Swift OLED 27"</h5>
+                        <p class="card-text text-muted small mb-3">Herný OLED monitor, 240Hz obnovovacia frekvencia, extrémne rýchla 0.03ms odozva, dokonalá čierna.</p>
+                        <div class="mt-auto d-flex align-items-end justify-content-between">
+                            <div>
+                                <span class="text-dark fw-bold fs-5">999.00€</span>
+                            </div>
+                            <button class="btn btn-primary rounded-circle p-2 lh-1" style="width: 35px; height: 35px;"><i class="bi bi-plus-lg"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Electro<span class="text-primary">Tech</span>.</h5>
+                    <p class="text-secondary small pe-4">Vaša ultimátna destinácia pre nákup elektroniky a spotrebičov. Kvalita garantovaná.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3">Rýchle odkazy</h6>
+                    <ul class="list-unstyled text-secondary small line-height-lg">
+                        <li class="mb-2"><a href="about.html" class="text-secondary text-decoration-none hover-white">O nás</a></li>
+                        <li class="mb-2"><a href="support.html" class="text-secondary text-decoration-none hover-white">Kontaktujte podporu</a></li>
+                        <li class="mb-2"><a href="return.html" class="text-secondary text-decoration-none hover-white">Reklamačný poriadok</a></li>
+                        <li class="mb-2"><a href="tracker.html" class="text-secondary text-decoration-none hover-white">Sledovanie objednávky</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-secondary small mb-3">Odoberajte a dostávajte novinky a oznámenia.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+                <p class="mb-2 mb-md-0">&copy; 2026 ElectroTech. Všetky práva vyhradené.</p>
+                <div>
+                    <a href="#" class="text-secondary text-decoration-none hover-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none hover-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

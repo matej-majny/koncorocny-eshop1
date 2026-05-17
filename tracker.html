@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sledovanie objednávky - ElectroTech</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100" style="font-family: 'Inter', sans-serif;">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4" href="index.html">Electro<span class="text-primary">Tech</span>.</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="d-flex mx-auto w-100 my-3 my-lg-0 px-lg-4" style="max-width: 550px;">
+                    <div class="input-group">
+                        <input class="form-control border-0 bg-light" type="search" placeholder="Vyhľadávajte laptopy, príslušenstvo, slúchadla..." aria-label="Search">
+                        <button class="btn btn-primary px-4" type="submit"><i class="bi bi-search"></i></button>
+                    </div>
+                </form>
+                <ul class="navbar-nav align-items-center mb-2 mb-lg-0 fw-medium">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white hover-primary" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link text-white hover-primary" href="support.html">Podpora</a>
+                    </li>
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <a class="btn btn-outline-light position-relative px-4" href="cart.html">
+                            <i class="bi bi-cart3 me-1"></i> Košík
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                4
+                                <span class="visually-hidden">predmety v košíku</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow-1 py-4">
+        <div class="container">
+            <nav aria-label="breadcrumb" class="mb-4">
+                <ol class="breadcrumb mb-0" style="font-size: 0.85rem;">
+                    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none">Domov</a></li>
+                    <li class="breadcrumb-item active">Sledovanie objednávky</li>
+                </ol>
+            </nav>
+
+            <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm mb-5 text-center border-top border-primary border-4">
+                <div class="mb-3">
+                    <i class="bi bi-box-seam text-primary" style="font-size: 3rem;"></i>
+                </div>
+                <h1 class="fw-bold mb-3">Sledovanie objednávky</h1>
+                <p class="text-secondary lead mx-auto" style="max-width: 600px;">
+                    Zadajte číslo vašej objednávky a e-mailovú adresu, ktorú ste použili pri nákupe, aby ste zistili aktuálny stav doručenia.
+                </p>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <div class="card border-0 bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
+                        <h4 class="fw-bold text-dark mb-4">Kde sa nachádza môj balík?</h4>
+                        
+                        <form>
+                            <div class="mb-4">
+                                <label for="orderNumber" class="form-label fw-bold small">Číslo objednávky</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0"><i class="bi bi-hash text-muted"></i></span>
+                                    <input type="text" class="form-control bg-light border-start-0 ps-0 py-2" id="orderNumber" placeholder="Napr. ORD-12345678" required>
+                                </div>
+                                <div class="form-text small text-muted">Nájdete ho v potvrdzovacom e-maile.</div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label for="billingEmail" class="form-label fw-bold small">E-mailová adresa</label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-light border-end-0"><i class="bi bi-envelope text-muted"></i></span>
+                                    <input type="email" class="form-control bg-light border-start-0 ps-0 py-2" id="billingEmail" placeholder="vas@email.sk" required>
+                                </div>
+                                <div class="form-text small text-muted">E-mail, ktorý ste zadali pri vytváraní objednávky.</div>
+                            </div>
+                            
+                            <div class="d-grid mt-5">
+                                <button type="submit" class="btn btn-primary py-3 fw-bold rounded-pill shadow-sm">
+                                    Sledovať objednávku <i class="bi bi-arrow-right ms-2"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="card border border-light-subtle bg-light p-4 p-md-5 rounded-4 shadow-sm h-100">
+                        <h5 class="fw-bold text-dark mb-4"><i class="bi bi-info-circle-fill text-primary me-2"></i> Užitočné informácie</h5>
+                        
+                        <div class="mb-4">
+                            <h6 class="fw-bold small">Kde nájdem číslo objednávky?</h6>
+                            <p class="text-muted small mb-0">Číslo vašej objednávky sme vám zaslali v potvrdzovacom e-maile ihneď po dokončení nákupu. Rovnako ho nájdete po prihlásení do svojho zákazníckeho účtu v sekcii "Moje objednávky".</p>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <h6 class="fw-bold small">Kedy mi bude tovar doručený?</h6>
+                            <p class="text-muted small mb-0">Ak ste objednávku vytvorili do 18:00 a tovar bol skladom, doručujeme zvyčajne nasledujúci pracovný deň. Pri tovare na objednávku vás budeme informovať e-mailom.</p>
+                        </div>
+
+                        <div>
+                            <h6 class="fw-bold small">Nefunguje vám sledovanie?</h6>
+                            <p class="text-muted small mb-3">Spracovanie čísla zásielky kuriérskou spoločnosťou môže trvať niekoľko hodín od jej odoslania z nášho skladu.</p>
+                            <a href="support.html" class="btn btn-sm btn-outline-dark rounded-pill px-4 fw-medium">Kontaktovať podporu</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+    </main>
+
+    <footer class="bg-dark text-white pt-5 pb-3 mt-auto">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3">Electro<span class="text-primary">Tech</span>.</h5>
+                    <p class="text-secondary small pe-4">Vaša ultimátna destinácia pre nákup elektroniky a spotrebičov. Kvalita garantovaná.</p>
+                    <div class="d-flex gap-3 mt-3">
+                        <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h6 class="fw-bold mb-3">Rýchle odkazy</h6>
+                    <ul class="list-unstyled text-secondary small line-height-lg">
+                        <li class="mb-2"><a href="about.html" class="text-secondary text-decoration-none hover-white">O nás</a></li>
+                        <li class="mb-2"><a href="support.html" class="text-secondary text-decoration-none hover-white">Kontaktujte podporu</a></li>
+                        <li class="mb-2"><a href="return.html" class="text-secondary text-decoration-none hover-white">Reklamačný poriadok</a></li>
+                        <li class="mb-2"><a href="tracker.html" class="text-secondary text-decoration-none hover-white">Sledovanie objednávky</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="fw-bold mb-3">Newsletter</h6>
+                    <p class="text-secondary small mb-3">Odoberajte a dostávajte novinky a oznámenia.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control bg-dark border-secondary text-white" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-secondary my-4">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-center text-secondary small">
+                <p class="mb-2 mb-md-0">&copy; 2026 ElectroTech. Všetky práva vyhradené.</p>
+                <div>
+                    <a href="#" class="text-secondary text-decoration-none hover-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-secondary text-decoration-none hover-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
